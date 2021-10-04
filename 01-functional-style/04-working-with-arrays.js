@@ -19,6 +19,8 @@ async function getInformationFromName(name) {
 
 // console.log(namesWithInformation);
 
+// Declarative - map() returns a list of promises
+
 const namesWithInformation = await Promise.all(
   names.map(getInformationFromName)
 );
